@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    color: white;
+    font-style: normal;
+}
+.navigation{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 80px;
+    background: transparent;
+    align-items: center;
+    padding: 0 15px;
+    position: sticky;
+    top: 0;
+    left: 0;
+    border-bottom: 1px solid red;
+}
+.list{
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+.list>ul{
+    display:flex ;
+    list-style: none;
+    gap: 40px;
+    font-weight: bold;
+    align-items: center;
+
+}
+li:hover{
+    cursor: pointer;
+    transition-duration: 0.2s;
+    text-decoration: underline rgb(255, 56, 56);
+    color: rgb(255, 56, 56);
+    
+
+}
+li{
+    font-size: large;
+    font-weight: 600;
+}
+.list>ul>button{
+    width: 120px;
+    height: 40px;
+    background-color: rgb(255, 56, 56);
+    color: white;
+    border-radius: 3px;
+    border: 1px solid rgb(255, 56, 56);
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    padding: 0;
+}
+.list>ul>button:hover{
+    background-color: black;
+    color: rgb(255, 56, 56);
+    cursor: pointer;
+    transition-duration: 0.5s;
+}
+.logo>h1{
+    font-family: "Dela Gothic One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-style: italic;
+    color: rgb(255, 56, 56);
+}
+.outer-container{
+    background-color: black;
+}
+.main-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+img{
+    height: 458px;
+    width: 378px;
+    border-radius: 50%;
+    border: 3px solid rgb(255, 56, 56);
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    width: 700px;
+    height: 100vh;
+    align-items: flex-start;
+    justify-content: center;
+}
+#greet{
+    font-size: medium;
+}
+#name{
+    font-size: 50px;
+    font-style: italic;
+}
+#name>span{
+    font-style: italic;
+    color: rgb(255, 56, 56);
+}
+#designation{
+    color: rgb(255, 56, 56);
+}
+
+
