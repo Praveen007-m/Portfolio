@@ -11,13 +11,15 @@
     flex-direction: row;
     justify-content: space-between;
     height: 80px;
-    background: transparent;
+    background-color: black;
+    backdrop-filter: blur(8px);
     align-items: center;
     padding: 0 15px;
     position: sticky;
     top: 0;
     left: 0;
     border-bottom: 1px solid red;
+    
 }
 .list{
   font-family: "Poppins", sans-serif;
@@ -34,7 +36,7 @@
     align-items: center;
 
 }
-li:hover{
+.nav-list:hover{
     cursor: pointer;
     transition-duration: 0.2s;
     text-decoration: underline rgb(255, 56, 56);
@@ -42,12 +44,12 @@ li:hover{
     
 
 }
-li{
+.nav-list{
     font-size: large;
     font-weight: 600;
 }
 .list>ul>button{
-    width: 120px;
+    width: 110px;
     height: 40px;
     background-color: rgb(255, 56, 56);
     color: white;
@@ -71,6 +73,10 @@ li{
     font-style: italic;
     color: rgb(255, 56, 56);
 }
+.logo>h1:hover{
+    color: white;
+    transition-duration: 0.5s;
+}
 .outer-container{
     background-color: black;
 }
@@ -79,7 +85,7 @@ li{
     justify-content: center;
     align-items: center;
 }
-img{
+.main-pic{
     height: 458px;
     width: 378px;
     border-radius: 50%;
@@ -92,6 +98,30 @@ img{
     height: 100vh;
     align-items: flex-start;
     justify-content: center;
+}
+.typewriter h2 {
+  overflow: hidden;             
+  border-right: 2px solid #ff006e;  
+  white-space: nowrap;          
+  margin: 0 auto;
+  letter-spacing: 2px;
+  animation: typing 2s steps(30, end), blink-caret 0.5s step-end infinite;
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: #ff006e; }
+}
+.Profile-pic{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 100px;
 }
 #greet{
     font-size: medium;
@@ -107,5 +137,183 @@ img{
 #designation{
     color: rgb(255, 56, 56);
 }
+.container>.button{
+    display: flex;
+    gap: 20px;
+}
+.button>.but1{
+    width: 150px;
+    height: 40px;
+    background-color: rgb(255, 56, 56);
+    color: white;
+    border: 1px solid rgb(255, 56, 56);
+    border-radius: 8px;
+}
+.button>.but2{
+    width: 100px;
+    height: 40px;
+    background: transparent;
+    color: rgb(255, 56, 56);
+    border: 1px solid rgb(255, 56, 56);
+    border-radius: 8px;
+}
+.button>.but1:hover{
+    cursor: pointer;
+    background: transparent;
+    color: rgb(255, 56, 56);
+    transition-duration: 0.3s;
+}
+.button>.but2:hover{
+    cursor: pointer;
+    background-color: rgb(255, 56, 56);
+    color: white;
+    transition-duration: 0.3s;
+}
+.container>p{
+    margin: 20px 0 30px 0;
+}
+.icon-container {
+    display: flex;
+    gap: 20px;
+    margin-top: 25px;
+}
 
+.icon-box {
+    background-color: #1a1a1a;
+    padding: 15px;
+    border-radius: 10px;
+    color: #ff006e;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
 
+.icon-box i {
+    font-size: 20px;
+    
+}
+.icon-box i:hover{
+        color: white;
+        transform: scale(1.1);
+        transition-duration: 0.2s;
+}
+.icon-box:hover{
+    
+    background-color: rgb(255, 56, 56);
+    transform: scale(1.1);
+    transition-duration: 0.2s;
+    
+}
+#about-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.about-me{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.about-me h3 {
+  color: #aaa;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+.about-me h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.highlight {
+  color: #ff006e;
+}
+
+.about-me p {
+    width: 900px;
+  line-height: 1.7;
+  margin-bottom: 15px;
+}
+
+.skills-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+.skills-list li {
+  margin-bottom: 10px;
+  font-size: 1rem;
+}
+
+.skills-list i {
+  color: #ff006e;
+  margin-right: 10px;
+}
+.skills-section {
+  text-align: center;
+  padding: 60px 20px;
+  background-color: black;
+  color: white;
+}
+
+.skills-section h1 {
+  font-size: 2.2rem;
+  margin: 20px 0;
+}
+
+.skills-section .highlight {
+  color: #ff0066;
+}
+
+.skills-section p {
+  max-width: 750px;
+  margin: 0 auto 40px auto;
+  line-height: 1.6;
+  color: #ccc;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  justify-content: space-evenly;
+}
+
+.skill-card {
+  background-color: #1a1a1a;
+  padding: 30px;
+  border-radius: 12px;
+  transition: 0.3s ease;
+  box-shadow: 0 4px 12px rgba(255, 0, 102, 0.1);
+}
+.skills-grid > .skill-card:nth-child(4),
+.skills-grid > .skill-card:nth-child(5) {
+  grid-column: span 1;
+  justify-self: center;
+}
+
+.skill-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(255, 0, 102, 0.2);
+}
+
+.skill-card .icon {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+  color: #ff0066;
+}
+
+.skill-card h3 {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+}
+
+.skill-card p {
+  font-size: 0.95rem;
+  color: #bbb;
+}
