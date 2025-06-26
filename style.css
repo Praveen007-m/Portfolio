@@ -5,6 +5,7 @@
     font-family: "Poppins", sans-serif;
     color: white;
     font-style: normal;
+    scroll-behavior: smooth;
 }
 
 
@@ -39,7 +40,7 @@
     align-items: center;
 
 }
-.nav-list:hover{
+.nav-list>a:hover, .nav-list:hover{
     cursor: pointer;
     transition-duration: 0.2s;
     text-decoration: underline rgb(255, 56, 56);
@@ -47,9 +48,10 @@
     
 
 }
-.nav-list{
+.nav-list>a{
     font-size: large;
     font-weight: 600;
+    text-decoration: none;
 }
 .list>ul>button{
     width: 110px;
@@ -300,7 +302,7 @@
   justify-self: center;
 }
 
-.skill-card:hover {
+.skill-card:hover , .edu-details:hover{
   transform: translateY(-5px);
   box-shadow: 0 6px 20px rgba(255, 0, 102, 0.2);
 }
@@ -351,6 +353,7 @@
   width: 100%;
   height: 52vh;
   border-radius: 5px;
+  transition: 0.3s ease;
 }
 .edu-details>h3{
    color: rgb(255, 56, 56);
@@ -454,6 +457,7 @@
   .edu-details {
     width: 100%;
     height: auto;
+    
   }
 }
 
