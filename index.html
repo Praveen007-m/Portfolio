@@ -22,9 +22,9 @@
                     <li class="nav-list"><a href="#Home">Home</a></li>
                     <li class="nav-list"><a href="#about-container">About</a></li>
                     <li class="nav-list"><a href="#skills">Skills</a></li>
-                    <li class="nav-list"><a href="">Projects</a></li>
+                    <li class="nav-list"><a href="#Projects">Projects</a></li>
                     <li class="nav-list"><a href="#contact">Contact</a></li>
-                    <button>Resume</button>
+                    <button id="Resume">Resume</button>
                 </ul>
             </div>
         </div>
@@ -39,8 +39,8 @@
                 
                 <p>I am a passionate and self-motivated fresher software developer with a solid foundation in Java and web development. I enjoy solving problems through code and am eager to learn new technologies while contributing to a dynamic and growth-oriented development team.</p>
                 <div class="button">
-                    <button class="but1">Download Resume</button>
-                    <button class="but2">Contact</button>
+                    <button class="but1" id="Resume1">Download Resume</button>
+                    <button class="but2"><a href="#contact">Contact</a></button>
                 </div>
                 <div class="icon-container">
                     <a href="https://github.com/Praveen007-m" target="_blank" class="icon-box"><i class="fab fa-github"></i></a>
@@ -115,7 +115,7 @@
                 <div class="edu-details">
                     <h3>Vedavalli Vidyalaya Senior Secondary School, <br>Walajapet</h3>
                     <div class="college">
-                        <h5>Higher Secondary Education</h5>
+                        <h5>Higher Secondary & Senior Secondary Education</h5>
                         <p>Jun 2020 - Jul 2021</p>
                     </div>
                     <div class="edu-list">
@@ -123,7 +123,7 @@
                             <i class="fas fa-check-circle"></i><p>Completed Higher Secondary Education under CBSE with core subjects: Biology, Mathematics, Physics, and Chemistry.</p>
                         </div>
                         <div>
-                            <i class="fas fa-check-circle"></i><p>Secured 83% in 12th Grade, demonstrating strong academic performance across both science and analytical subjects.</p>
+                            <i class="fas fa-check-circle"></i><p>Secured 83% in 12th Grade and 77.6% in 10th Grade, demonstrating strong academic performance across both science and analytical subjects.</p>
                         </div>
                         <div>
                             <i class="fas fa-check-circle"></i><p>Built early interest in logical thinking and technology through self-learning and computer science exposure.</p>
@@ -214,17 +214,69 @@
                 <h3>Database Basics</h3>
                 <p>Understand and work with SQL databases in academic projects with basic CRUD operations.</p>
                 </div>
-                <div class="skill-card">
-                <i class="fas fa-paint-brush icon"></i>
-                <h3>UI/UX Design</h3>
-                <p>Design clean and simple interfaces for web applications using layout and color theory principles.</p>
-                </div>
+                
                 <div class="skill-card">
                 <i class="fas fa-cloud-upload-alt icon"></i>
                 <h3>Project Deployment</h3>
                 <p>Deploy and host static websites using GitHub Pages directly from repositories with ease and version control.</p>
                 </div>
             </div>
+        </section>
+
+        <section class="skills-section" id="Projects">
+
+            <div class="Project-topic">
+                <h1>
+                Explore My <span class="highlight">Projects</span> Hightlights
+                </h1>
+                <p>
+                    These projects reflect my <span class="highlight">learning journey</span> , <span class="highlight">technical foundation</span>, and <span class="highlight">creative problem-solving</span>. Each one demonstrates my ability to build beginner-friendly, functional software and contribute to <span class="highlight">frontend development</span> and academic research.
+                </p>
+            </div>
+            <div class="project-container">
+                <div class="project-img">
+                    <img src="img/Video-Streaming.png" alt="Video-Streaming Website">
+                </div>
+                <div class="project-content">
+                    <h3>HTML and CSS</h3>
+                    <h1>Video-Hub</h1>
+                    
+                    <p>Video Hub is a YouTube-inspired video browsing interface built using HTML and CSS. It features a clean, responsive layout with a header, sidebar, and video grid — mimicking the look and feel of YouTube. This project helped me practice webpage structuring, layout design, and responsive styling using only HTML and CSS.</p>
+                    <img src="img/arrow_outward_24dp_FF3838_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+                </div>
+            </div>
+
+            <div class="project-container">
+                
+                <div class="project-content">
+                    <h3>HTML, CSS and JavaScript</h3>
+                    <h1>DivineFiesta</h1>
+                    
+                    <p>DivineFiesta is a dynamic event management website designed to simplify ticket booking for music concerts. Focused on concerts by various music directors, the platform allows users to browse upcoming events, view concert details, and book tickets seamlessly. Built with a user-friendly interface, DivineFiesta aims to enhance the concert-going experience through an organized and responsive design.</p>
+                    <img src="img/arrow_outward_24dp_FF3838_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+                </div>
+
+                <div class="project-img">
+                    <img src="img/Event Management.png" alt="Video-Streaming Website">
+                </div>
+            </div>
+
+            <div class="project-container">
+                <div class="project-img">
+                    <img src="img/EarthQuake Prediction.png" alt="Video-Streaming Website">
+                </div>
+                <div class="project-content">
+                    <h3>Deep Learning</h3>
+                    <h1>EarthQuake Prediction</h1>
+                    
+                    <p>Earthquake Prediction is a machine learning-based web application that predicts the magnitude of future earthquakes using a Multilayer Perceptron (MLP) model. The system is trained on historical earthquake data and provides real-time predictions through a user-friendly web interface. This project combines data science and web development to demonstrate how deep learning models can be applied to real-world problems for early disaster awareness.</p>
+                    <img src="img/arrow_outward_24dp_FF3838_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+                </div>
+            </div>
+
+            
+            
+            
         </section>
 
         <section id="contact" class="contact-section">
@@ -264,6 +316,6 @@
 
     </div>
 
-    
+    <script src="script.js"></script>
 </body>
 </html>
